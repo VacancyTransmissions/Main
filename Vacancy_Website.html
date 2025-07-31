@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTIST ARCHIVE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.2;
+            overflow-x: hidden;
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Banner Area */
+        .header-banner {
+            text-align: center;
+            padding: 40px 0;
+            margin-bottom: 40px;
+            border: 2px solid #fff;
+            background-color: #000;
+        }
+
+        .header-banner h1 {
+            font-size: 2.5em;
+            font-weight: normal;
+            margin: 0;
+            letter-spacing: 3px;
+        }
+
+        .header-banner .subtitle {
+            font-size: 1em;
+            margin-top: 10px;
+            letter-spacing: 1px;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            width: 100%;
+        }
+
+        /* Boot-style info */
+        .boot-header {
+            margin-bottom: 30px;
+            font-size: 12px;
+            color: #ccc;
+        }
+
+        .boot-header .line {
+            margin-bottom: 2px;
+        }
+
+        /* Content sections removed - keeping only streaming links */
+
+        /* Streaming Links */
+        .streaming-links {
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .streaming-links h3 {
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 20px;
+            font-weight: normal;
+            letter-spacing: 2px;
+        }
+
+        .streaming-link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            display: inline-block;
+            margin: 0 20px;
+            padding: 10px 20px;
+            border: 1px solid #fff;
+            border-radius: 12;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .streaming-link:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            color: #ccc;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-banner h1 {
+                font-size: 1.8em;
+                letter-spacing: 1px;
+            }
+
+            .streaming-links {
+                margin: 20px 0;
+            }
+
+            .streaming-link {
+                display: block;
+                margin: 10px auto;
+                width: 200px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-banner">
+            <h1>VACANCY</h1>
+            <div class="subtitle"></div>
+        </div>
+
+        <div class="main-content">
+            <div class="boot-header">
+                <div class="line"><a href="mailto:info@vacancytransmissions.com" class="streaming-link">Make your transmission...</a>
+</div>
+            </div>
+
+            <div class="streaming-links">
+                <h3>LISTEN</h3>
+                <a href="https://your-artist-name.bandcamp.com" target="_blank" class="streaming-link">BANDCAMP</a>
+                <a href="https://soundcloud.com/vacancytransmissions" target="_blank" class="streaming-link">SOUNDCLOUD</a>
+            </div>
+
+            <footer>
+                <p>© 2025 VACANCY | info@vacancytransmissions.com | ALL RIGHTS RESERVED</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        // Simplified script - no section switching needed
+        document.addEventListener('DOMContentLoaded', function() {
+            // Simple hover effects for streaming links
+            const streamingLinks = document.querySelectorAll('.streaming-link');
+            
+            streamingLinks.forEach(link => {
+                link.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.05)';
+                });
+                
+                link.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
